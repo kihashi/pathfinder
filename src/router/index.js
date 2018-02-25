@@ -21,6 +21,11 @@ export default new Router({
       path: '/champions',
       name: 'Champions',
       order: 3
+    },
+    {
+      path: '/spectate',
+      name: 'Spectate',
+      order: 4
     }
   ],
   linkActiveClass: 'is-active'
