@@ -28,5 +28,5 @@ export default new Router({
       order: 4
     }
   ],
-  linkActiveClass: 'is-active'
+  linkExactActiveClass: 'is-active'
 })
