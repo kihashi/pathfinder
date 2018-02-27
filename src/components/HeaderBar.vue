@@ -17,7 +17,13 @@
         <div class="navbar-menu"
           v-bind:class="{ 'is-active': menu_active }">
           <div class="navbar-end">
-            <router-link v-for="route in this.$router.options.routes" :key="route.order" class="navbar-item" :to="route">{{route.name}}</router-link>
+            <router-link v-for="route in this.$router.options.routes"
+                         :key="route.order"
+                         class="navbar-item"
+                         v-bind:class="{ 'is-active': menu_active }"
+                         :to="route">
+              {{route.name}}
+            </router-link>
           </div>
         </div>
       </nav>
