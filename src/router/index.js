@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Welcome from '@/components/Welcome'
+import Summoners from '@/components/summoners/Summoners'
 
 Vue.use(Router)
 
@@ -15,7 +16,8 @@ export default new Router({
     {
       path: '/summoners',
       name: 'Summoners',
-      order: 2
+      order: 2,
+      component: Summoners
     },
     {
       path: '/champions',
